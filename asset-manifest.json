@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/arenix/static/css/main.5d5249d6.css",
+    "main.js": "/arenix/static/js/main.3330c5cd.js",
+    "static/js/488.cfb17d25.chunk.js": "/arenix/static/js/488.cfb17d25.chunk.js",
+    "index.html": "/arenix/index.html",
+    "main.5d5249d6.css.map": "/arenix/static/css/main.5d5249d6.css.map",
+    "main.3330c5cd.js.map": "/arenix/static/js/main.3330c5cd.js.map",
+    "488.cfb17d25.chunk.js.map": "/arenix/static/js/488.cfb17d25.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d5249d6.css",
+    "static/js/main.3330c5cd.js"
+  ]
+}
