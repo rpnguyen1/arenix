@@ -1,20 +1,28 @@
-// src/App.js
 import React from "react";
-import Header from "./components/Header";
-import About from "./components/About";
-import Gallery from "./components/Gallery";
-import Footer from "./components/Footer";
-import "./index.css";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom"; // Import Link for navigation
+import Homepage from "./pages/Homepage";
+import Hello from "./pages/About";
+import Projects from "./pages/Projects";
+import './index.css'; // Assuming you have a CSS file for styling
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <About />
-      <Gallery />
-      <Footer />
+const App = () => (
+  <Router>
+    <div>
+      <nav>
+        <ul>
+          <li><Link to="/">Home</Link></li> {/* Use Link instead of <a> */}
+          <li><Link to="/about">About</Link></li> {/* Use Link instead of <a> */}
+          <li><Link to="/projects">Projects</Link></li> {/* Use Link instead of <a> */}
+        </ul>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Homepage />} /> {/* Wrap components in JSX */}
+        <Route path="/about" element={<Hello />} /> {/* Wrap components in JSX */}
+        <Route path="/projects" element={<Projects />} /> {/* Wrap components in JSX */}
+      </Routes>
     </div>
-  );
-}
+  </Router>
+);
 
 export default App;

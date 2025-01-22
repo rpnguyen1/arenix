@@ -7,6 +7,9 @@ const About = () => (
     <p>
       Coming soon!
     </p>
+    <div className="social-links">
+      <a href="https://www.instagram.com/arenixart/" target="_blank" rel="noopener noreferrer">instagram</a>
+    </div>
   </section>
 );
 
