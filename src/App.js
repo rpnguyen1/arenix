@@ -6,7 +6,7 @@ import Projects from "./pages/Projects";
 import './index.css'; // Assuming you have a CSS file for styling
 
 const App = () => (
-  <Router>
+  <Router basename="/arenix">
     <div>
       <nav>
         <ul>
